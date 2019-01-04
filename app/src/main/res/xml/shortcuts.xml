@@ -1,0 +1,51 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 第一个静态shortcut -->
+    <shortcut
+        android:shortcutId="static_one"
+        android:enabled="true"
+        android:shortcutLongLabel="@string/static_one_long_label"
+        android:shortcutShortLabel="@string/static_one_short_label">
+        <!--
+            一个shortcut，当有多个intents与之相关联时，在用户启动该shortcut时，最先呈现给用户的是
+            <intent>...</intent>集合中最后一个intent操作事件。
+            即这里创建了一个intent的回退栈，最后一个才是被快捷方式打开的那个。
+        -->
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.cheng.shortcut"
+            android:targetClass="com.example.cheng.shortcut.MainActivity"/>
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.cheng.shortcut"
+            android:targetClass="com.example.cheng.shortcut.MainActivity"/>
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.cheng.shortcut"
+            android:targetClass="com.example.cheng.shortcut.MainActivity"/>
+
+    </shortcut>
+    <!-- 第二个静态shortcut -->
+    <shortcut
+        android:shortcutId="static_two"
+        android:enabled="true"
+        android:shortcutLongLabel="@string/static_two_long_label"
+        android:shortcutShortLabel="@string/static_two_short_label">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.cheng.shortcut"
+            android:targetClass="com.example.cheng.shortcut.MainActivity"/>
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.example.cheng.shortcut"
+            android:targetClass="com.example.cheng.shortcut.MainActivity"/>
+
+    </shortcut>
+
+
+</shortcuts>

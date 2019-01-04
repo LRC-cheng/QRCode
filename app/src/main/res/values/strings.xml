@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">shortcut</string>
+    <string name="static_disabled_message">shortcut</string>
+    <string name="static_one_long_label">long_label1</string>
+    <string name="static_one_short_label">short_label</string>
+    <string name="static_two_long_label">long_label2</string>
+    <string name="static_two_short_label">short_label</string>
+</resources>
