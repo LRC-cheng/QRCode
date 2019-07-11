@@ -12,9 +12,9 @@ by--Asting
 5.调用，需要申请照相机权限，参考Permission库的使用
 
 调用方式：
-                Intent intent = new Intent(MainActivity.this, CaptureActivity.class);
-                ZxingConfig config = new ZxingConfig();
-                config.setPlayBeep(false);
-                config.setShake(false);
-                intent.putExtra(Constant.INTENT_ZXING_CONFIG, config);
-                startActivityForResult(intent, REQUEST_CODE_SCAN);
+									Intent intent = new Intent(MainActivity.this, CaptureActivity.class);
+									ZxingConfig config = new ZxingConfig();
+									config.setPlayBeep(false);
+									config.setShake(false);
+									intent.putExtra(Constant.INTENT_ZXING_CONFIG, config);
+									startActivityForResult(intent, REQUEST_CODE_SCAN);
